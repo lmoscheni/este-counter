@@ -28,7 +28,7 @@ html p, body p {
   width: 100%;
 }
 
-.container, .recordContainer, .lastSpeech, .esteCounter {
+.container, .recordContainer, .lastSpeech, .esteCounter, .icon {
   width: 100%;
   margin: 15px 15px;
 }
@@ -37,11 +37,7 @@ html p, body p {
   padding: 10px;
   max-width: 300px;
   border: none;
-}
-
-.recordContainer:hover {
-  background-color: red;
-  color: white;
+  border-radius: 30px;
 }
 
 .--recording {
@@ -51,7 +47,17 @@ html p, body p {
 
 .lastSpeech {
   background-color: #969696;
+  color: yellow;
   text-align: center;
+  border-radius: 5px;
+}
+
+.lastSpeech h3 {
+  font-weight: bold;
+}
+
+.lastSpeech p {
+  font-style: italic;
 }
 
 .esteCounter {
@@ -59,5 +65,14 @@ html p, body p {
   font-weight: bold;
   font-size: 1.5rem;
   color: red;
+}
+
+.icon {
+  text-align: center;
+}
+
+.icon img {
+  width: 100px;
+  background-color: white;
 }
 /*# sourceMappingURL=styles.css.map */
