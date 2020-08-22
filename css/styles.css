@@ -1,0 +1,63 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  background-color: #2b2b2b;
+  color: #EEE;
+  margin: 15% 10% 15% 10;
+}
+
+html h1, body h1 {
+  text-align: center;
+}
+
+html p, body p {
+  text-align: center;
+  width: 100%;
+}
+
+.container, .recordContainer, .lastSpeech, .esteCounter {
+  width: 100%;
+  margin: 15px 15px;
+}
+
+.recordContainer {
+  padding: 10px;
+  max-width: 300px;
+  border: none;
+}
+
+.recordContainer:hover {
+  background-color: red;
+  color: white;
+}
+
+.--recording {
+  background-color: red;
+  color: white;
+}
+
+.lastSpeech {
+  background-color: #969696;
+  text-align: center;
+}
+
+.esteCounter {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */

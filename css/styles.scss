@@ -1,0 +1,57 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    background-color: #2b2b2b;
+    color: #EEE;
+    margin: 15% 10% 15% 10;
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 15px 15px;
+}
+
+.recordContainer {
+    @extend .container;
+    padding: 10px;
+    max-width: 300px;
+    border: none;
+
+    &:hover {
+        background-color: red;
+        color: white;
+    }
+
+}
+
+.--recording {
+    background-color: red;
+    color: white;
+}
+
+.lastSpeech {
+    @extend .container;
+    background-color: #969696;
+    text-align: center;
+}
+
+.esteCounter {
+    @extend .container;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: red;
+}
