@@ -30,6 +30,8 @@ html, body {
     max-width: 300px;
     border: none;
     border-radius: 30px;
+
+    &:focus {outline:0;}
 }
 
 .--recording {
