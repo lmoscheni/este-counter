@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link  -->
-  <link rel="stylesheet" href="./css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-  <title>"Este" counter!</title>
-</head>
-<body>
-  <h1>_Este_ counter!</h1>
-  <p>
-    La aplicación tiene como finalidad contabilizar los "este" de Carlos durante los anuncios parroquiales.
-  </p>
-  <div class="icon">
-    <img src="./assets/ryanlerch_thinkingboy_outline.svg" alt="thinking man"/>
-  </div>
-  <div class="esteCounter">
-    Count: <span id="counter">0</span>
-  </div>
-  <div class="lastSpeech">
-    <h3>Last speech:</h3>
-    <p id="lastSpeech">No hay...</p>
-  </div>
-  <button id="record" class="recordContainer">
-    <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
-  </button>
- 
-
-  <script src="app.js"></script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contador de "este"</title>
+  </head>
+  <body class="flex justify-center bg-stone-800">
+    <div
+      class="h-screen px-5 py-4 flex flex-col justify-center gap-10 text-white text-center"
+    >
+      <h1 class="text-4xl">Contador de "este"</h1>
+      <p class="text-xl text-amber-400 italic">
+        La aplicación tiene como finalidad contabilizar los "este" de Carlos
+        durante los anuncios parroquiales.
+      </p>
+      <div
+        class="w-36 h-36 bg-white border-4 border-amber-400 rounded-full overflow-hidden self-center"
+      >
+        <img
+          src="./assets/ryanlerch_thinkingboy_outline.svg"
+          alt="thinking man"
+        />
+      </div>
+      <div class="p-5 rounded-md shadow-sm bg-stone-700 text-3xl">
+        Contador: <span class="text-amber-400 font-bold" id="counter">0</span>
+      </div>
+      <div class="px-3 py-1 rounded-md shadow-sm bg-stone-700">
+        <h3 class="underline">Última grabación:</h3>
+        <p id="lastSpeech" class="mt-3 text-amber-400 italic">
+          No se encontró...
+        </p>
+      </div>
+      <button
+        id="record"
+        class="self-center w-auto px-3 py-1 rounded-md shadow-sm bg-white text-black font-bold hover:bg-amber-200"
+      >
+        Grabar
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
